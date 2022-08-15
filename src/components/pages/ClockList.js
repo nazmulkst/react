@@ -1,10 +1,10 @@
 import Clock from "./Clock";
 
-function ClockList({quantities = []}){
+function ClockList({quantities = [], area}){
     return (
         <div>
             {quantities.map((key) => (
-                <Clock key={key}/>
+                <Clock key={key} area={area}/>
                 ))}
         </div>
     );
